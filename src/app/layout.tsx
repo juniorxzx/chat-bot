@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { ThemeProvider } from "@/context/theme-context";
+import Header from "@/components/header";
+import InputChat from "@/components/inputChat";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,11 +28,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <ThemeProvider>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-dark bg-light text-black dark:text-white`}
+        >
+          <Header />
+          {children}
+          <InputChat />
+        </body>
+      </ThemeProvider>
     </html>
   );
 }
