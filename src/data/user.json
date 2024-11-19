@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "cpf": "48760963840",
+      "dateOfBirth": "2003-02-09",
+      "name": "Alexandre Rodrigues Junior",
+      "gender": "Masculino",
+      "tel": "15997678494",
+      "email": "al860270@gmail.com",
+      "password": "Alex40453@",
+      "preexistingConditions": [],
+      "acceptTerms": true
+    }
+  ]
+}

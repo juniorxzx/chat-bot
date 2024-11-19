@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/context/theme-context";
 import Header from "@/components/header";
-import InputChat from "@/components/inputChat";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,7 +33,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
-          <InputChat />
+       
         </body>
       </ThemeProvider>
     </html>
