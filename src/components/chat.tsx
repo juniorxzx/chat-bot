@@ -60,10 +60,12 @@ const ChatBox = () => {
               ...prev,
               {
                 message: "Aqui estão as suas dívidas:",
-                options: data.dividas.map((d: string) => ({
-                  name: d.instituicao,
-                  value: d.valor,
-                })),
+                options: data.dividas.map(
+                  (d: { instituicao: string; valor: string }) => ({
+                    name: d.instituicao,
+                    value: d.valor,
+                  })
+                ),
                 sender: false,
               },
             ]);
