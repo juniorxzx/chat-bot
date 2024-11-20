@@ -10,11 +10,21 @@
   list-style: none;
 }
 
+::-webkit-scrollbar {
+  transition: all .5s;
+  width: 5px;
+  height: 1px;
+  z-index: 10;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #b3ada7;
+}
+
 body {
   color: #faf9f9;
   background: #0c0c0c;
-  background-image: url("/plano-bg-dark.jpg");
-  background-position: center;
-  background-size: center;
   font-family: Arial, Helvetica, sans-serif;
 }

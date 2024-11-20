@@ -7,7 +7,11 @@ interface LayoutGridProps {
 }
 
 const LayoutGrid = ({ children }: LayoutGridProps) => {
-  return <div className="max-w-[1440px] ">{children}</div>;
+  return (
+    <div className="max-w-[1440px] p-8 flex items-center justify-center h-screen">
+      {children}
+    </div>
+  );
 };
 
 export default LayoutGrid;

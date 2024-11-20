@@ -1,15 +1,18 @@
 {
   "users": [
     {
-      "cpf": "48760963840",
-      "dateOfBirth": "2003-02-09",
-      "name": "Alexandre Rodrigues Junior",
-      "gender": "Masculino",
-      "tel": "15997678494",
-      "email": "al860270@gmail.com",
-      "password": "Alex40453@",
-      "preexistingConditions": [],
-      "acceptTerms": true
+      "cpf": "19341938015",
+      "name": "Allan Souza",
+      "dividas": [
+        {
+          "instituicao": "Banco do Brasil",
+          "valor": "R$ 1919,90"
+        },
+        {
+          "instituicao": "Faculdade",
+          "valor": "R$ 20203,90"
+        }
+      ]
     }
   ]
 }

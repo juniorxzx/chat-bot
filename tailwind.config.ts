@@ -13,6 +13,7 @@ const config: Config = {
         background_default: "#0B141A",
         header_dark: "#202c33",
         header_light: "#47ad9b",
+        header_op_06: "rgba(0,0,0,0.6)",
         white_strong: "#e9edef",
         white_weak: "#818786",
 
